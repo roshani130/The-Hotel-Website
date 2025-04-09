@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Luxe HEAVEN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #ded1dd;
+            padding: 0;
+            margin: 0;
+        }
+        h1 {
+            background-color: #1c3d5a;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+
+        div .navlinks a {
+            text-decoration: none;/*this remove underline*/
+            color: black;
+        }
+
+        .navlinks li {
+            list-style: none; /*this remove bullet points*/
+            display: inline-block;
+            margin: 4px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .flex_space {
+            display: flex; /*this is make list in another line*/
+            justify-content: space-between; /*justify content property display  the list to the corner*/
+        }
+
+         button {
+            border: none; /*this is for removing book now btn border*/
+            background: none; /*this is for removing by default background of the btn*/
+            transition: 0.5s;
+            cursor: pointer; /*this property is used for hands symbol cursor*/
+            display: inline-flex;
+        }
+
+        .primary-btn { /*this for book now button and about us button*/
+            padding: 15px 30px; /* 1st is a top & bottom padding value and 2nd is a left & right padding values*/
+            background: #c71585;
+            font-weight: bolder;
+            color: white;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+        }
+
+        li {
+            margin: 6px;
+        }
+
+        /*---------------header----------------*/
+        header {
+            height: 69px; 
+            line-height: 50px;/*this is for all header content line-height*/
+            background: white;
+            height: 80px;
+        }
+
+        header img {/*this is image size in home section*/
+            width: 200px;
+            height: 52px;
+        }
+
+        header ul {
+            display:inline-block; /*this is for inline the content*/
+            text-transform: uppercase;
+        }
+
+        header ul li a {/*this is for navlinks transition*/
+            transition: 0.5s;
+            margin: 6px;
+        }
+
+        header ul li a:hover{/*this hover property for navlinks*/
+            color: #c71585;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(194, 68, 216, 0.1);
+        }
+        h2 { 
+            color: #1c3d5a;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(14,14,94);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .text {
+            display: flex;
+            margin: 10px;
+            padding: 0 10px;
+        }
+        .text div {
+            background: #e4cbe2;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(194, 68,216, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        
+            <div class="content flex_space">
+                <div class="logo">
+                    <img src="images\logo-1.png">
+                </div>
+                <div class="navlinks">
+                    <ul id="menulist">
+                        <li style="padding: 5.5px;"><a href="index.html">home</a></li>
+                        <li style="padding: 5.5px;"><a href="about.html" target="_blank">about</a></li>
+                        <li><a href="rooms.html">rooms</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li> <i class="fa fa-search"></i></li>
+                        <li> <a href="book.html"><button style="height: 45px;" class="primary-btn">BOOK NOW</button></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            </header>
+
+        <h1>About The Luxe HEAVEN</h1>
+    <section>
+        <h2>Welcome to Our Hotel</h2>
+        <p>
+            At The Luxe HEAVEN, we pride ourselves on offering luxury, comfort, and outstanding hospitality. Located in the heart of Kerala, we are your perfect home away from home.
+        </p>
+    </section>
+    <section>
+        <h2>-Our Mission</h2>
+        <p>
+            To create exceptional and personalized experiences for every guest, ensuring comfort and joy in every moment of their stay.
+        </p>
+    </section>
+    <section>
+        <h2>-Our Vision</h2>
+        <p>
+            To be a beacon of world-class hospitality, bringing together cultures and creating connections that last a lifetime.
+        </p>
+    </section>
+    <section>
+        <h2>What Our Guests Say</h2>
+        <div class="text">
+            <div>
+                <p>"Fantastic service and beautiful rooms! I felt so welcomed and taken care of."</p>
+                <p><strong>- A Happy Guest</strong></p>
+            </div>
+            <div>
+                <p>"The food was exquisite, and the staff went above and beyond to make my stay perfect."</p>
+                <p><strong>- A Satisfied Guest</strong></p>
+            </div>
+            <div>
+                <p>"I will definitely be back! The location is excellent, and the amenities are top-notch."</p>
+                <p><strong>- A Frequent Visitor</strong></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 The Luxe HEAVEN. All rights reserved.
+    </footer>
+</body>
+</html>

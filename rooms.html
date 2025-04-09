@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Luxe HEAVEN-rooms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        section {
+            padding: 10px;
+            margin: 10px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        a {
+            text-decoration: none; /*this removes the underline of the link*/
+            color: black;
+        }
+
+        li {
+            list-style: none; /*this removes by default bullet points*/
+            display: inline-block;/*this is align the links*/
+        }
+
+        .flex_space {
+            display: flex; /*this is make list in another line*/
+            justify-content: space-between; /*justify content property display  the list to the corner*/
+        }
+
+        button {
+            border: none; /*this is for removing book now btn border*/
+            background: none; /*this is for removing by default background of the btn*/
+            transition: 0.5s;
+            cursor: pointer; /*this property is used for hands symbol cursor*/
+        }
+
+        .primary-btn { /*this for book now button and about us button*/
+            padding: 15px 40px; /* 1st is a top & bottom padding value and 2nd is a left & right padding values*/
+            background: #c71585;
+            font-weight: bolder;
+            color: white;
+            display: inline-flex;
+        }
+
+        /*---------------header----------------*/
+        header {
+            height: 69px; 
+            line-height: 50px;/*this is for all header content line-height*/
+        }
+
+        header img {/*this is image size in home section*/
+            width: 200px;
+            height: 62px;
+        }
+
+        header ul {
+            display:inline-block; /*this is for inline the content*/
+            text-transform: uppercase;
+        }
+
+        header ul li a {/*this is for navlinks transition*/
+            transition: 0.5s;
+        }
+
+        header ul li a:hover{/*this hover property for navlinks*/
+            color: #c71585;
+        }
+
+
+        h2{
+            color:#333;
+            display: inline-flex;
+            font-size: large;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin: 10px 0;
+            height: 230px;
+            display: inline;
+        }
+
+        .heading {
+            text-align: center;
+            margin-left: 60px;
+        }
+
+        .type-room {
+            display: inline-flex;
+            margin-left: 20px;
+        }
+
+        div button {
+            border: none;
+            background: #1a1a1a;
+            color: #fff;
+            height: 40px;
+            width: 120px;
+            padding: 5px;
+            margin: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-flex;
+        }
+    
+        h1 {
+            text-align: start;
+            margin-left: 30px;
+            color: #333;
+        }
+
+        footer {
+            background-color: rgb(14,14,94);
+            color: #fff;
+            height: 37px;
+            text-align: center;
+            padding-top: 16px;
+            position: relative;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+    </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="content flex_space">
+                <div class="logo">
+                    <img src="images\logo-1.png">
+                </div>
+                <div class="navlinks">
+                    <ul id="menulist">
+                        <li style="margin: 8px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="index.html">home</a></li>
+                        <li style="margin: 8px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="about.html" >about</a></li>
+                        <li style="margin: 8px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="rooms.html" >rooms</a></li>
+                        <li style="margin: 8px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="services.html" >services</a></li>
+                        <li style="margin: 8px; font-family: Georgia, 'Times New Roman', Times, serif;"><a href="contact.html" >contact</a></li>
+                        <li style="margin: 8px;"> <i class="fa fa-search"></i></li>
+                        <li style="margin: 8px;"> <a href="book.html" ><button style="padding: 13px 17px; width: 150px; height: 45px; border-radius: 0; padding-left: 32px; padding-top: 15px;" class="primary-btn">BOOK NOW</button></a></li>
+                    </ul>
+                </div>
+            </div>
+            </header>
+
+
+    <section>
+        <h1>OUR ROOMS</h2>
+        <div class="type-room">
+            <img src="images/deluxe-room.jpg">
+            <div class="heading">
+                <h2>Deluxe Bedroom</h2>
+                <p> elegant single room with large bed</p>
+                <p class="price">5000/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                    <!--<li><button class="detail-btn">View Details</button>-->
+                </div>
+            </div>
+        </div> 
+    </section>
+    </body>
+
+    <section>
+        <div class="type-room">
+    <img src="images/suite.jpg">
+    <div class="heading">
+        <h2>Delux Bedroom</h2>
+        <p>Luxurious room with premium quality.</p>
+        <p class="price">4500/night</p>
+        <div class="button">
+            <li><a href="book.html"><button class="read-more">Book</button></a></li>
+        </div>
+    </div>
+</div>
+</section>
+
+    <section>
+        <div class="type-room">
+            <img src="images/deluxe-room1.jpg">
+            <div class="heading">
+                <h2>Deluxe Bedroom</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">5000/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="type-room">
+            <img src="images/deluxe-room2.jpg">
+            <div class="heading">
+                <h2>Deluxe Bedroom</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">5000/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="type-room">
+            <img src="images/deluxe-room3.jpg">
+            <div class="heading">
+                <h2>Deluxe Bedroom</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">5000/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="type-room">
+            <img src="images/deluxe-room4.jpg">
+            <div class="heading">
+                <h2>Deluxe Single Bedroom</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">5000/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="type-room">
+            <img src="images/eco-freindlyroom.jpg">
+            <div class="heading">
+                <h2>Eco-Friendly Room</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">4000/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="type-room">
+            <img src="images/eco-freindlyroom1.jpg">
+            <div class="heading">
+                <h2>Eco-Friendly Room</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">4000/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="type-room">
+            <img src="images/single-bedroom.jpg">
+            <div class="heading">
+                <h2>Elegant Single Bedroom</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">4500/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="type-room">
+            <img src="images/single-bedroom1.jpg">
+            <div class="heading">
+                <h2>Elegant Single Bedroom</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">4500/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="type-room">
+            <img src="images/single-bedroom2.jpg">
+            <div class="heading">
+                <h2>Elegant Single Bedroom</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">4000/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="type-room">
+            <img src="images/single-bedroom3.jpg">
+            <div class="heading">
+                <h2>Elegant Single Bedroom</h2>
+                <p>  elegant single room with large bed</p>
+                <p class="price">4000/night</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="book-btn">Book</button></a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <footer>
+        &copy; 2025 The Luxe HEAVEN. All rights reserved.
+    </footer>
+
+    </html>
+    </body>
