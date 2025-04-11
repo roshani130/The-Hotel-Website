@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0px;
+
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        .h1, .p {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        div .navlinks a {
+            text-decoration: none;/*this remove underline*/
+            color: black;
+        }
+
+        .navlinks li {
+            list-style: none; /*this remove bullet points*/
+            display: inline-block;
+            margin: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .flex_space {
+            display: flex; /*this is make list in another line*/
+            justify-content: space-between; /*justify content property display  the list to the corner*/
+        }
+
+         button {
+            border: none; /*this is for removing book now btn border*/
+            background: none; /*this is for removing by default background of the btn*/
+            transition: 0.5s;
+            cursor: pointer; /*this property is used for hands symbol cursor*/
+            display: inline-flex;
+        }
+
+        .primary-btn { /*this for book now button and about us button*/
+            padding: 15px 30px; /* 1st is a top & bottom padding value and 2nd is a left & right padding values*/
+            background: #c71585;
+            font-weight: bolder;
+            color: white;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+        }
+
+        /*---------------header----------------*/
+        header {
+            height: 69px; 
+            line-height: 50px;/*this is for all header content line-height*/
+        }
+
+        header img {/*this is image size in home section*/
+            width: 200px;
+            height: 52px;
+        }
+
+        header ul {
+            display:inline-block; /*this is for inline the content*/
+            text-transform: uppercase;
+        }
+
+        header ul li a {/*this is for navlinks transition*/
+            transition: 0.5s;
+        }
+
+        header ul li a:hover{/*this hover property for navlinks*/
+            color: #c71585;
+        }
+        
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .services li {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services ul li {
+            background: #ded1dd;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            list-style: none;
+        }
+        .gallery img {
+            display: inline-block;
+            margin: 10px 30px;
+            width: 180px;
+            height: 120px;
+        }
+        
+        div .heading h2 p {
+            text-align: right;
+            margin: 10px 40px;
+            background:none;
+            margin: 50px;
+        }
+
+        .type-room {
+            display: inline-flex;
+            margin-left: 20px;
+        }
+
+        blockquote {
+            background: #ded1dd;
+            height: 30px;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-left: 10px;
+            margin: 15px 0px;
+        }
+
+        .read-more, .detail-btn {
+            border: none;
+            background: #1a1a1a;
+            color: #fff;
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+            margin: 3px;
+            cursor: pointer;
+            text-align: center;
+            padding: 10px 30px;
+            margin: 2px;
+            
+        }
+
+
+        .button {
+            display: inline-flex;
+            margin: 4px;
+            padding: 4px;
+        }
+
+        .offers li {
+            background: #ded1dd;
+            list-style: none;
+            height: 30px;
+            padding-top: 10px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        .services img {
+            height: 100px;
+            width: 100px;
+            display: inline-flexbox;
+        }
+
+        .services h3 {
+            display: inline;
+            text-align: right;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .service .text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .service .image {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .service img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+ 
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="images\logo-1.png">
+            </div>
+            <div class="navlinks">
+                <ul style="padding: 5.5px;" id="menulist">
+                    <li style="margin: 6px;"><a href="index.html">home</a></li>
+                    <li style="margin: 5.5px;"><a href="about.html" >about</a></li>
+                    <li style="margin: 5.5px;"><a href="rooms.html" >rooms</a></li>
+                    <li style="margin: 5.5px;"><a href="services.html" >services</a></li>
+                    <li style="margin: 5.5px;"><a href="contact.html" >contact</a></li>
+                    <li> <i class="fa fa-search"></i></li>
+                    <li> <a href="book.html" ><button style="height: 45px; padding-left: 33px;" class="primary-btn">BOOK NOW</button></a></li>
+                </ul>
+            </div>
+        </div>
+           
+    </header>
+
+    <h1 class="h1">Welcome to Luxury Hotel</h1>
+    <p class="p">Experience elegance and comfort.</p>
+
+    <h2>Our Services</h2>
+
+    <!-- Services Section -->
+    <main>
+        <section class="service">
+            <div class="text">
+                <h2>Fine Dining</h2>
+                <p>Delight your taste buds with gourmet dishes prepared by our world-class chefs at our in-house restaurant.</p>
+            </div>
+            <div class="image">
+                <img src="images/fine-dining.jpg" alt="Fine Dining">
+            </div>
+        </section>
+
+
+        <section class="service">
+            <div class="image">
+                <img src="images/con-hall.jpg" alt="Swimming Pool">
+            </div>
+            <div class="text">
+                <h2>Conference Hall</h2>
+                <p>Host successful business meetings and events in our fully equipped conference hall with state-of-the-art facilities.</p>
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="text">
+                <h2>Spa & Wellness</h2>
+                <p>Rejuvenate yourself at our luxurious spa offering a range of treatments to help you relax and unwind.</p>
+            </div>
+            <div class="image">
+                <img src="images/spa.jpg" alt="Spa & Wellness">
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="image">
+                <img src="images/swim-pool.jpg" alt="Swimming Pool">
+            </div>
+            <div class="text">
+                <h2>Swimming Pool</h2>
+                <p>Take a refreshing dive into our crystal-clear swimming pool and enjoy poolside relaxation.</p>
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="text">
+                <h2>Gym & Fitness Center</h2>
+                <p>Stay fit during your stay with our state-of-the-art gym and personal training sessions.</p>
+            </div>
+            <div class="image">
+                <img src="images/gym.jpg" alt="Gym & Fitness Center">
+            </div>
+        </section>
+
+        <main>
+            <section class="service">
+                <div class="image">
+                    <img src="images/play-area.jpg" alt="Fine Dining">
+                </div>
+                <div class="text">
+                    <h2>kids Play Area</h2>
+                    <p>Let your children have fun at our safe and enjoyable kids' play area.</p>
+                </div>
+            </section>
+    </main>
+            <!--<li>Spa and Wellness Retreats</li>
+            <li>Fine Dining Experiences</li>
+            <li>Kid's Club and Babysitting</li>
+            <li>Infinity Pool Access</li>
+        </ul>-->
+
+   <!--  Rooms Section 
+     <section class="rooms">
+        <h2>Types of Rooms</h2>
+    <div class="type-room">
+
+        <img src="images/suite.jpg">
+            <div style="margin-left: 50px;" class="heading">
+                <h2>Delux Rooms</h2>
+                <p>Luxurious room with premium quality.</p>
+                <div class="button">
+                    <li><a href="book.html"><button class="read-more">Book</button></a></li>
+                    <li><a href="rooms.html"><button style="padding: 13px;" class="detail-btn">View Details</button></a></li>
+                </div>
+            </div>
+        </div>
+        </section>
+                
+<section>
+    <div class="type-room">
+        <img src="images/eco-freindlyroom1.jpg">
+        <div style="margin-left: 50px;" class="heading">
+            <h2>Eco-Friendly Rooms</h2>
+            <p>   comfort meets care for the nature.</p>
+            <div class="button">
+                <li><a href="book.html"><button class="read-more">Book</button></a></li>
+                <li><a href="rooms.html"><button style="padding: 13px;" class="detail-btn">View Details</button></a></li>
+                <button class="book-btn">Book</button>
+                <button class="detail-btn">View Details</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section>
+            <div class="type-room">
+                <img src="images/single-bedroom.jpg">
+                <div style="margin-left: 50px;" class="heading">
+                    <h2>Elegant Single Bedrooms</h2>
+                    <p>  elegant single room with large bed</p>
+                    <div class="button">
+                        <li><a href="book.html"><button class="read-more">Book</button></a></li>
+                        <li><a href="rooms.html"><button style="padding: 13px;" class="detail-btn">View Details</button></a></li>
+                        <button class="book-btn">Book</button>
+                        <button class="detail-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+       
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery">
+        <div class="hotel-view">
+        <h2>Photo Gallery</h2>
+        <img src="images/hotel-view1.jpg" alt="Hotel View">
+        <img src="images/room-interior.png" alt="Room Interior">
+        <img src="images/dining-area.jpg" alt="Dining Experience">
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers">
+        <h2>Special Offers</h2>
+        <ul>
+            <li>Early Bird Discounts: Book early and save.</li>
+            <li style="margin-top: 15px;">Seasonal Promotions: Exclusive rates during peak seasons.</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Guest Testimonials</h2>
+        <blockquote>
+            "A truly unforgettable experience! Every detail was perfect." - Guest A
+        </blockquote>
+        <blockquote>
+            "Luxury and comfort at its finest. Highly recommend!" - Guest B
+        </blockquote>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align: center; padding: 20px;">© 2025 Luxury Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
